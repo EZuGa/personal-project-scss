@@ -1,0 +1,66 @@
+@import '../palette.scss';
+html,
+body {
+  width: 100%;
+}
+header {
+  background-color: $black;
+  padding-top: 26px;
+  padding-bottom: 25px;
+  padding-left: 25px;
+  padding-right: 25px;
+  .header-main {
+    margin: auto;
+    max-width: 1170px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    .header-logo {
+      display: flex;
+      align-items: flex-end;
+      height: 48px;
+      .letter-p {
+        position: relative;
+        height: 95%;
+        width: 27px;
+        :nth-child(1) {
+          position: absolute;
+          top: 5px;
+        }
+        :nth-child(2) {
+          position: absolute;
+        }
+        :nth-child(3) {
+          position: absolute;
+          top: 15px;
+          left: 10px;
+        }
+      }
+      h3 {
+        font-size: 36px;
+        font-weight: 300;
+        font-family: "Raleway", sans-serif;
+        color: $white;
+      }
+    }
+    .header-nav {
+      display: flex;
+      justify-content: space-between;
+      display: flex;
+      list-style: none;
+      font-family: "Open Sans", sans-serif;
+      color:$white;
+      margin-right: 2px;
+      width: 737px;
+      min-width: 50%;
+      font-size: 14px;
+    }
+    .header-table-nav {
+      display: none;
+      background-color: $green;
+      width: 54px;
+      height: 35px;
+    }
+  }
+}
+

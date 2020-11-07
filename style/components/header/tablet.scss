@@ -1,0 +1,27 @@
+@import '../palette.scss';
+@media only screen and (max-width: 768px) {
+    header {
+      width: 100%;
+      padding-bottom: 33px;
+      .header-main {
+        .header-nav {
+          display: none;
+        }
+        .header-table-nav {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          flex-direction: column;
+          border: 1px solid white;
+          outline: $green solid 2px;
+          align-self: flex-end;
+          .joxi {
+            width: 30px;
+            height: 2px;
+            background-color: $white;
+            margin-bottom: 3px;
+          }
+        }
+      }
+    }
+  }
