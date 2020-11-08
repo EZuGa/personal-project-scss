@@ -1,0 +1,32 @@
+@media only screen and (max-width: 768px) {
+    .welcome{
+        width: 100%;
+        padding-top: 158px;
+        background-color: red;
+        // transform: translateX(-10px);
+        .welcome-main{
+                transform: translateX(0px);
+                margin: auto;
+
+        h1:first-of-type{
+            font-size: 59px;
+            
+        }
+        h1:nth-of-type(2){
+
+        }
+        p{
+            text-align: center;
+            font-size: 19px;
+            background-color: rosybrown;
+            // transform: translateX(-3.5px);
+            margin-top: 2px;
+        }
+        button{
+            margin-top: 39.5px;
+            transform: translateX(-3.5px);
+
+        }
+    }
+    }
+}

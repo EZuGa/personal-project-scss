@@ -6,7 +6,7 @@ body {
 header {
   background-color: #000000;
   padding-top: 26px;
-  padding-bottom: 25px;
+  padding-bottom: 25.7px;
   padding-left: 25px;
   padding-right: 25px;
 }
@@ -92,6 +92,7 @@ header .header-main .header-table-nav {
   header {
     padding-top: 10px;
     padding-left: 20px;
+    padding-bottom: 20px;
   }
   header .header-main .header-logo {
     display: flex;
@@ -126,6 +127,110 @@ header .header-main .header-table-nav {
     width: 22px;
   }
 }
+.welcome {
+  height: 760px;
+  padding-top: 242px;
+}
+.welcome .welcome-main {
+  max-width: 739px;
+  min-height: 173px;
+  margin: auto;
+  text-align: center;
+  transform: translateX(12px);
+}
+.welcome .welcome-main h1:first-of-type {
+  font-family: "Raleway", sans-serif;
+  font-weight: 200;
+  font-size: 62px;
+  color: white;
+  line-height: 1;
+}
+.welcome .welcome-main h1:nth-of-type(2) {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  font-size: 71px;
+  letter-spacing: -1px;
+}
+.welcome .welcome-main p {
+  text-align: start;
+  font-size: 20px;
+  font-family: "Raleway", sans-serif;
+  letter-spacing: -0.2px;
+  margin-top: 5px;
+}
+.welcome .welcome-main button {
+  width: 138px;
+  height: 38px;
+  background-color: #3AB6B2;
+  border: 1px solid white;
+  outline: 3px solid #3AB6B2;
+  margin-top: 43px;
+  color: white;
+  font-size: 13px;
+  font-weight: 700;
+}
+
+@media only screen and (max-width: 768px) {
+  .welcome {
+    width: 100%;
+    padding-top: 158px;
+    background-color: red;
+  }
+  .welcome .welcome-main {
+    transform: translateX(0px);
+    margin: auto;
+  }
+  .welcome .welcome-main h1:first-of-type {
+    font-size: 59px;
+  }
+  .welcome .welcome-main p {
+    text-align: center;
+    font-size: 19px;
+    background-color: rosybrown;
+    margin-top: 2px;
+  }
+  .welcome .welcome-main button {
+    margin-top: 39.5px;
+    transform: translateX(-3.5px);
+  }
+}
+@media only screen and (max-width: 320px) {
+  .welcome {
+    width: 100%;
+    padding-top: 48px;
+  }
+  .welcome .welcome-main {
+    transform: translateX(0px);
+    margin: auto;
+  }
+  .welcome .welcome-main h1:first-of-type {
+    font-size: 25px;
+  }
+  .welcome .welcome-main h1:nth-of-type(2) {
+    font-size: 30px;
+  }
+  .welcome .welcome-main p {
+    content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum";
+    text-align: center;
+    font-size: 9px;
+    background-color: rosybrown;
+    max-width: 272px;
+    margin: auto;
+    margin-top: 0px;
+    letter-spacing: -0.1px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: clip;
+  }
+  .welcome .welcome-main button {
+    font-size: 7px;
+    margin-top: 39.5px;
+    transform: translateX(-3.5px);
+    width: 59px;
+    height: 15px;
+    outline: 2px solid #3AB6B2;
+  }
+}
 h2 {
   font-family: "Raleway", sans-serif;
   font-size: 31px;
@@ -134,6 +239,7 @@ h2 {
 
 * {
   box-sizing: border-box;
+  font-family: "Raleway", sans-serif;
 }
 
 body {
