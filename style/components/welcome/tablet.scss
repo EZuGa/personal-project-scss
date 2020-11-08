@@ -2,7 +2,8 @@
     .welcome{
         width: 100%;
         padding-top: 158px;
-        background-color: red;
+        padding-bottom: 188px;
+        // padding-top: 0px;
         // transform: translateX(-10px);
         .welcome-main{
                 transform: translateX(0px);
@@ -18,7 +19,6 @@
         p{
             text-align: center;
             font-size: 19px;
-            background-color: rosybrown;
             // transform: translateX(-3.5px);
             margin-top: 2px;
         }

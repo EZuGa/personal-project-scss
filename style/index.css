@@ -128,12 +128,13 @@ header .header-main .header-table-nav {
   }
 }
 .welcome {
-  height: 760px;
+  background-color: #292929;
   padding-top: 242px;
+  padding-bottom: 260px;
+  color: white;
 }
 .welcome .welcome-main {
   max-width: 739px;
-  min-height: 173px;
   margin: auto;
   text-align: center;
   transform: translateX(12px);
@@ -142,7 +143,6 @@ header .header-main .header-table-nav {
   font-family: "Raleway", sans-serif;
   font-weight: 200;
   font-size: 62px;
-  color: white;
   line-height: 1;
 }
 .welcome .welcome-main h1:nth-of-type(2) {
@@ -174,7 +174,7 @@ header .header-main .header-table-nav {
   .welcome {
     width: 100%;
     padding-top: 158px;
-    background-color: red;
+    padding-bottom: 188px;
   }
   .welcome .welcome-main {
     transform: translateX(0px);
@@ -186,7 +186,6 @@ header .header-main .header-table-nav {
   .welcome .welcome-main p {
     text-align: center;
     font-size: 19px;
-    background-color: rosybrown;
     margin-top: 2px;
   }
   .welcome .welcome-main button {
@@ -198,6 +197,7 @@ header .header-main .header-table-nav {
   .welcome {
     width: 100%;
     padding-top: 48px;
+    padding-bottom: 60px;
   }
   .welcome .welcome-main {
     transform: translateX(0px);
@@ -224,7 +224,7 @@ header .header-main .header-table-nav {
   }
   .welcome .welcome-main button {
     font-size: 7px;
-    margin-top: 39.5px;
+    margin-top: 18px;
     transform: translateX(-3.5px);
     width: 59px;
     height: 15px;
@@ -234,7 +234,7 @@ header .header-main .header-table-nav {
 h2 {
   font-family: "Raleway", sans-serif;
   font-size: 31px;
-  font-weight: 400;
+  font-weight: 600;
 }
 
 * {
@@ -250,6 +250,154 @@ body {
 * {
   margin: 0;
   padding: 0;
+}
+
+.about {
+  height: 1000px;
+  padding-top: 114px;
+}
+.about .about-header {
+  max-width: 1180px;
+  margin: auto;
+}
+.about .about-header h2 {
+  text-align: center;
+  color: #323232;
+}
+.about .about-header h2 span {
+  color: #3AB6B2;
+}
+.about .about-header .whole-icon {
+  padding-top: 9px;
+  text-align: center;
+}
+.about .about-header .whole-icon .joxi {
+  height: 1.1px;
+  width: 37px;
+  background-color: #D3D3D3;
+  display: inline-block;
+  vertical-align: middle;
+  margin-top: 4px;
+}
+.about .about-header .whole-icon img {
+  vertical-align: middle;
+  margin: 0px 4px;
+}
+.about .about-main {
+  max-width: 1180px;
+  margin: auto;
+  margin-top: 91px;
+  display: flex;
+  justify-content: space-between;
+}
+.about .about-main .image-mac {
+  margin-left: 3px;
+  margin-top: 5px;
+  display: flex;
+  align-items: center;
+}
+.about .about-main .image-mac img {
+  width: 100%;
+}
+.about .about-main .about-content {
+  width: 576px;
+}
+.about .about-main .about-content h2 {
+  letter-spacing: -0.58px;
+}
+.about .about-main .about-content > p {
+  margin-top: 23px;
+  line-height: 1.95;
+  font-size: 14px;
+  font-family: "Open Sans", sans-serif;
+}
+.about .about-main .about-content .content-wrap {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.about .about-main .about-content .content-wrap:first-of-type {
+  margin-top: 47px;
+}
+.about .about-main .about-content .content-wrap:last-of-type {
+  margin-top: 53px;
+}
+.about .about-main .about-content .content-wrap .content-box {
+  display: flex;
+  justify-content: space-between;
+  width: 46.5%;
+}
+.about .about-main .about-content .content-wrap .content-box .wre {
+  width: 63px;
+  height: 63px;
+  border-radius: 50%;
+  background-color: #3B3B3B;
+  margin-left: 2px;
+  flex-shrink: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.about .about-main .about-content .content-wrap .content-box div {
+  width: 66%;
+}
+.about .about-main .about-content .content-wrap .content-box div h3 {
+  font-size: 18px;
+  font-weight: 700;
+  letter-spacing: -0.3px;
+  margin-bottom: 10px;
+}
+.about .about-main .about-content .content-wrap .content-box div p {
+  font-size: 13px;
+  font-family: "Open Sans", sans-serif;
+  line-height: 1.65;
+}
+
+@media only screen and (max-width: 768px) {
+  .about {
+    padding-top: 71px;
+  }
+  .about .about-header h2 {
+    font-size: 28.88px;
+  }
+  .about .about-main {
+    background-color: #000000;
+    margin-top: 57px;
+    height: 420px;
+    width: 93.5%;
+  }
+  .about .about-main .image-mac {
+    display: none;
+  }
+  .about .about-main .image-mac img {
+    display: none;
+  }
+  .about .about-main .about-content {
+    display: none;
+  }
+}
+@media only screen and (max-width: 320px) {
+  .about {
+    padding-top: 35px;
+  }
+  .about .about-header h2 {
+    font-size: 27px;
+  }
+  .about .about-header .whole-icon {
+    padding-top: 7px;
+  }
+  .about .about-header .whole-icon .joxi {
+    width: 33px;
+  }
+  .about .about-header .whole-icon img {
+    width: 14px;
+  }
+  .about .about-main {
+    background-color: #000000;
+    margin-top: 36px;
+    height: 207px;
+    width: 87.5%;
+  }
 }
 
 /*# sourceMappingURL=index.css.map */

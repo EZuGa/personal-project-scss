@@ -1,0 +1,46 @@
+@import '../palette.scss';
+@media only screen and (max-width: 768px) {
+    .about{
+        padding-top: 71px;
+        .about-header{
+
+            h2{
+               font-size: 28.88px;
+                span{
+                }
+            }
+            }
+            .whole-icon{
+                .joxi{
+                }
+                img{
+
+                }
+            }
+        
+        .about-main{
+            background-color: #000000;
+            margin-top: 57px;
+            height: 420px;
+            width: 93.5%;
+            .image-mac{
+                display: none;
+    
+                img{
+                    display: none;
+                }
+            }
+            .about-content{
+                display: none;
+                
+                        
+                        
+                    
+                    
+                
+            }
+        }
+    }
+    
+  
+}
