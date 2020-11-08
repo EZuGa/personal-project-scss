@@ -11,3 +11,20 @@ body {
     -moz-osx-font-smoothing: grayscale;
     -webkit-font-smoothing: antialiased;
 }
+.whole-icon{
+    padding-top: 9px;
+    text-align: center;
+    .joxi{
+        height: 1.1px;
+        width: 37px;
+        background-color: #D3D3D3;
+        display: inline-block;
+        vertical-align: middle;
+        margin-top: 4px;
+        
+    }
+    img{
+        vertical-align: middle;         
+        margin: 0px 4px;   
+    }
+}

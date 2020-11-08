@@ -1,0 +1,74 @@
+@media only screen and (max-width: 768px) {
+    .contacts{
+        padding-top: 45px;
+            .contacts-header{
+                h2{
+                    font-size: 27px;
+                }
+                .whole-icon{
+                    img{
+                        width: 14px;
+                    }
+                    
+                    .joxi{
+                    }
+                }
+            }
+            .contacts-info{
+                background-color: royalblue;
+                margin-top: 42px;
+                width: 100%;
+                // transform: translateX(0px);
+                flex-direction: column;
+                align-items: center;
+
+                .info-box{
+                    width: 90%;
+                    background-color: orange;
+                    transform: translateX(7px);
+                    margin-bottom: 35px;
+
+                    &:nth-of-type(3), &:nth-of-type(2){
+                        background-color: yellow;
+                        transform: translateX(8px);
+                        img{
+                            // transform: translateX(7px);
+                        }
+                    }
+                    img{
+                    }
+                    h3{
+                        transform: translateX(0px);
+
+                    }
+                }
+            }
+            .contacts-form{
+                max-width: 87.5%;
+                margin-top: 2px;
+                .name-email{
+                    flex-direction: column;
+                    #name{
+                        width: 100%;
+                        margin-bottom: 10px;
+                    }
+                    #email{
+                        width: 100%;
+                    }
+                }
+                #subject{
+                    margin-top: 10px;
+                    margin-bottom: 9px;
+                }
+                #subject-area{
+                    height: 141px;
+                }
+                #submit{
+                    margin-top: 13px;
+                    
+                }
+    
+            }
+    
+        }
+    }

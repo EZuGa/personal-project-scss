@@ -64,7 +64,7 @@ header .header-main .header-table-nav {
   height: 35px;
 }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 1024px) {
   header {
     width: 100%;
     padding-bottom: 33px;
@@ -88,7 +88,7 @@ header .header-main .header-table-nav {
     margin-bottom: 3px;
   }
 }
-@media only screen and (max-width: 320px) {
+@media only screen and (max-width: 768px) {
   header {
     padding-top: 10px;
     padding-left: 20px;
@@ -170,7 +170,7 @@ header .header-main .header-table-nav {
   font-weight: 700;
 }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 1024px) {
   .welcome {
     width: 100%;
     padding-top: 158px;
@@ -193,7 +193,7 @@ header .header-main .header-table-nav {
     transform: translateX(-3.5px);
   }
 }
-@media only screen and (max-width: 320px) {
+@media only screen and (max-width: 768px) {
   .welcome {
     width: 100%;
     padding-top: 48px;
@@ -245,6 +245,23 @@ h2 {
 body {
   -moz-osx-font-smoothing: grayscale;
   -webkit-font-smoothing: antialiased;
+}
+
+.whole-icon {
+  padding-top: 9px;
+  text-align: center;
+}
+.whole-icon .joxi {
+  height: 1.1px;
+  width: 37px;
+  background-color: #D3D3D3;
+  display: inline-block;
+  vertical-align: middle;
+  margin-top: 4px;
+}
+.whole-icon img {
+  vertical-align: middle;
+  margin: 0px 4px;
 }
 
 * {
@@ -353,7 +370,7 @@ body {
   line-height: 1.65;
 }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 1024px) {
   .about {
     padding-top: 71px;
   }
@@ -376,7 +393,7 @@ body {
     display: none;
   }
 }
-@media only screen and (max-width: 320px) {
+@media only screen and (max-width: 768px) {
   .about {
     padding-top: 35px;
   }
@@ -397,6 +414,365 @@ body {
     margin-top: 36px;
     height: 207px;
     width: 87.5%;
+  }
+}
+.services {
+  background-color: #1E1E1E;
+  color: white;
+}
+.services .services-header h2 {
+  text-align: center;
+}
+
+@media only screen and (max-width: 1200px) {
+  .portfolio {
+    background-color: gray !important;
+  }
+}
+.portfolio {
+  padding-top: 108px;
+}
+.portfolio .portfolio-header {
+  padding-bottom: 85px;
+}
+.portfolio .portfolio-header h2 {
+  text-align: center;
+  background-color: red;
+}
+.portfolio .portfolio-header .whole-icon {
+  padding-top: 5px;
+}
+.portfolio .porfolio-main {
+  background-color: rebeccapurple;
+  max-width: 100%;
+  height: 765px;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  grid-gap: 7px;
+}
+.portfolio .porfolio-main .portfolio-box {
+  background-color: #000000;
+  position: relative;
+}
+.portfolio .porfolio-main .portfolio-box:nth-of-type(1), .portfolio .porfolio-main .portfolio-box:nth-of-type(3), .portfolio .porfolio-main .portfolio-box:nth-of-type(5) {
+  grid-column: span 2;
+}
+.portfolio .porfolio-main .portfolio-box:hover {
+  background-color: #292929;
+}
+.portfolio .porfolio-main .portfolio-box:hover .box-lower {
+  display: block;
+}
+.portfolio .porfolio-main .portfolio-box:hover .box-upper {
+  display: flex;
+}
+.portfolio .porfolio-main .portfolio-box .box-upper {
+  margin-top: 160px;
+  display: none;
+  justify-content: center;
+  margin-right: 4px;
+  background-color: red;
+}
+.portfolio .porfolio-main .portfolio-box .box-upper .wre {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 46px;
+  height: 46px;
+  background-color: transparent;
+  border: 2px solid #3ab6b2;
+  border-radius: 50%;
+}
+.portfolio .porfolio-main .portfolio-box .box-upper .wre:first-of-type {
+  transform: translateX(-11px);
+}
+.portfolio .porfolio-main .portfolio-box .box-upper .wre:hover {
+  background-color: #3ab6b2;
+}
+.portfolio .porfolio-main .portfolio-box .box-lower {
+  background-color: #000000;
+  position: absolute;
+  display: none;
+  bottom: 0;
+  width: 100%;
+  text-align: center;
+  padding-top: 15px;
+}
+.portfolio .porfolio-main .portfolio-box .box-lower h5 {
+  font-size: 16.98px;
+  font-weight: 600;
+  margin-bottom: 8px;
+  color: white;
+}
+.portfolio .porfolio-main .portfolio-box .box-lower p {
+  font-size: 13px;
+  font-weight: 600;
+  font-style: italic;
+  margin-bottom: 17.6px;
+  color: #3ab6b2;
+}
+
+@media only screen and (max-width: 1600px) {
+  .portfolio {
+    background-color: blue !important;
+  }
+}
+@media only screen and (max-width: 1024px) {
+  .portfolio {
+    padding-top: 70px;
+  }
+  .portfolio .portfolio-header {
+    padding-bottom: 58px;
+  }
+  .portfolio .portfolio-header h2 {
+    font-style: 28.99px;
+    background-color: orange;
+    font-weight: 600;
+    letter-spacing: -1.3px;
+  }
+  .portfolio .porfolio-main {
+    background-color: orange;
+    margin: auto;
+    max-width: 93.5%;
+    height: 480px;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-gap: 20px;
+  }
+  .portfolio .porfolio-main .portfolio-box:nth-of-type(7) {
+    display: none;
+  }
+  .portfolio .porfolio-main .portfolio-box:nth-of-type(1), .portfolio .porfolio-main .portfolio-box:nth-of-type(3), .portfolio .porfolio-main .portfolio-box:nth-of-type(5) {
+    grid-column: span 1;
+  }
+  .portfolio .porfolio-main .portfolio-box .box-upper {
+    margin-top: 80px;
+    background-color: royalblue;
+    transform: translateX(4px);
+  }
+  .portfolio .porfolio-main .portfolio-box .box-upper .wre {
+    width: 37px;
+    height: 37px;
+  }
+  .portfolio .porfolio-main .portfolio-box .box-lower h5 {
+    font-size: 12px;
+  }
+  .portfolio .porfolio-main .portfolio-box .box-lower p {
+    font-size: 10px;
+    margin-bottom: 12px;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .portfolio {
+    padding-top: 37px;
+  }
+  .portfolio .portfolio-header {
+    padding-bottom: 37px;
+  }
+  .portfolio .portfolio-header h2 {
+    font-size: 27px;
+    background-color: orchid;
+    letter-spacing: 0px;
+  }
+  .portfolio .porfolio-main {
+    background-color: orange;
+    margin: auto;
+    max-width: 88%;
+    height: 674px;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(4, 1fr);
+    grid-gap: 7px;
+  }
+  .portfolio .porfolio-main .portfolio-box:nth-of-type(7), .portfolio .porfolio-main .portfolio-box:nth-of-type(6), .portfolio .porfolio-main .portfolio-box:nth-of-type(5) {
+    display: none;
+  }
+  .portfolio .porfolio-main .portfolio-box:nth-of-type(1), .portfolio .porfolio-main .portfolio-box:nth-of-type(3), .portfolio .porfolio-main .portfolio-box:nth-of-type(5) {
+    grid-column: span 1;
+  }
+  .portfolio .porfolio-main .portfolio-box .box-upper {
+    margin-top: 40px;
+  }
+}
+.contacts-form input {
+  border: 1px solid #D4D4D4;
+  height: 46px;
+}
+.contacts-form input::placeholder {
+  color: #7C7C7C;
+  padding-left: 10px;
+  font-size: 14px;
+  font-family: "Raleway", sans-serif;
+}
+.contacts-form textarea {
+  border: 1px solid #D4D4D4;
+  padding-left: 10px;
+  padding-top: 16px;
+  font-size: 14px;
+  font-family: "Raleway", sans-serif;
+}
+
+.contacts {
+  padding-top: 90px;
+}
+.contacts .contacts-header h2 {
+  text-align: center;
+}
+.contacts .contacts-header .whole-icon .joxi {
+  margin-top: -1.5px;
+}
+.contacts .contacts-info {
+  max-width: 844px;
+  margin: auto;
+  margin-top: 89px;
+  background-color: rebeccapurple;
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  transform: translateX(-8px);
+}
+.contacts .contacts-info .info-box {
+  background-color: red;
+  text-align: center;
+  width: 229px;
+}
+.contacts .contacts-info .info-box:nth-last-of-type(2) {
+  background-color: royalblue;
+  transform: translateX(5px);
+}
+.contacts .contacts-info .info-box:nth-last-of-type(2) img {
+  margin-bottom: 22px;
+  transform: translateX(2px);
+}
+.contacts .contacts-info .info-box img {
+  margin-bottom: 15px;
+}
+.contacts .contacts-info .info-box h3 {
+  font-size: 15px;
+  font-weight: 400;
+  word-spacing: 0.4px;
+  letter-spacing: 0.6px;
+  background-color: rosybrown;
+  line-height: 1.6;
+  transform: translateX(2px);
+}
+.contacts .contacts-form {
+  display: flex;
+  flex-direction: column;
+  max-width: 945px;
+  margin: auto;
+  margin-top: 80px;
+}
+.contacts .contacts-form .name-email {
+  display: flex;
+  justify-content: space-between;
+}
+.contacts .contacts-form .name-email #name {
+  width: 464px;
+}
+.contacts .contacts-form .name-email #email {
+  width: 464px;
+}
+.contacts .contacts-form #subject {
+  width: 100%;
+  margin-top: 14px;
+  margin-bottom: 14px;
+}
+.contacts .contacts-form #subject-area {
+  width: 100%;
+  height: 171px;
+}
+.contacts .contacts-form #submit {
+  border: none;
+  background-color: #3AB6B2;
+  color: white;
+  width: 160px;
+  height: 42px;
+  font-family: "Raleway", sans-serif;
+  font-size: 13px;
+  font-weight: 700;
+  margin-top: 16px;
+}
+
+@media only screen and (max-width: 1024px) {
+  .contacts {
+    padding-top: 78px;
+  }
+  .contacts .contacts-header h2 {
+    font-size: 29px;
+  }
+  .contacts .contacts-info {
+    margin-top: 56px;
+    max-width: 790px;
+  }
+  .contacts .contacts-info .info-box:nth-of-type(3) {
+    background-color: yellow;
+    transform: translateX(19px);
+  }
+  .contacts .contacts-form {
+    max-width: 719px;
+    margin-top: 45px;
+  }
+  .contacts .contacts-form .name-email #name {
+    width: 49%;
+  }
+  .contacts .contacts-form .name-email #email {
+    width: 49.2%;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .contacts {
+    padding-top: 45px;
+  }
+  .contacts .contacts-header h2 {
+    font-size: 27px;
+  }
+  .contacts .contacts-header .whole-icon img {
+    width: 14px;
+  }
+  .contacts .contacts-info {
+    background-color: royalblue;
+    margin-top: 42px;
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+  }
+  .contacts .contacts-info .info-box {
+    width: 90%;
+    background-color: orange;
+    transform: translateX(7px);
+    margin-bottom: 35px;
+  }
+  .contacts .contacts-info .info-box:nth-of-type(3), .contacts .contacts-info .info-box:nth-of-type(2) {
+    background-color: yellow;
+    transform: translateX(8px);
+  }
+  .contacts .contacts-info .info-box h3 {
+    transform: translateX(0px);
+  }
+  .contacts .contacts-form {
+    max-width: 87.5%;
+    margin-top: 2px;
+  }
+  .contacts .contacts-form .name-email {
+    flex-direction: column;
+  }
+  .contacts .contacts-form .name-email #name {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+  .contacts .contacts-form .name-email #email {
+    width: 100%;
+  }
+  .contacts .contacts-form #subject {
+    margin-top: 10px;
+    margin-bottom: 9px;
+  }
+  .contacts .contacts-form #subject-area {
+    height: 141px;
+  }
+  .contacts .contacts-form #submit {
+    margin-top: 13px;
   }
 }
 

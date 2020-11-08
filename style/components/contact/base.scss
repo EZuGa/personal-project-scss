@@ -1,0 +1,20 @@
+.contacts-form{
+    input{
+        border: 1px solid #D4D4D4;
+        height: 46px;
+        &::placeholder{
+            color: #7C7C7C ;
+            padding-left: 10px;
+            font-size: 14px;
+            font-family: 'Raleway', sans-serif;
+
+        }
+    }
+    textarea{
+        border: 1px solid #D4D4D4;
+        padding-left: 10px;
+        padding-top: 16px;
+        font-size: 14px;
+        font-family: 'Raleway', sans-serif;
+    }
+}

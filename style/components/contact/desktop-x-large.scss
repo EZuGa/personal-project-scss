@@ -1,0 +1,95 @@
+@import 'base.scss';
+.contacts{
+    padding-top: 90px;
+        .contacts-header{
+            h2{
+                text-align:center;
+            }
+            .whole-icon{
+                .joxi{
+                    margin-top: -1.5px;
+                }
+            }
+        }
+        .contacts-info{
+           
+            max-width: 844px;
+            margin: auto;
+            margin-top: 89px;
+            background-color: rebeccapurple;
+            display: flex;
+            align-items: flex-end;
+            justify-content: space-between;
+            transform: translateX(-8px);
+            .info-box{
+                background-color: red;
+                text-align: center;
+                width: 229px;
+                &:nth-last-of-type(2){
+                    background-color: royalblue;
+                    transform: translateX(5px);
+                    img{
+                        margin-bottom: 22px;
+                        transform: translateX(2px);
+                    }
+                }
+                img{
+                    margin-bottom: 15px;
+                }
+                h3{
+                    font-size: 15px;
+                    font-weight: 400;
+                    word-spacing: 0.4px;
+                    letter-spacing: 0.6px;
+                    background-color: rosybrown;
+                    line-height: 1.6;
+                    transform: translateX(2px);
+                    span{
+
+                    }
+                }
+            }
+        }
+        .contacts-form{
+            display: flex;
+            flex-direction: column;
+            max-width: 945px;
+            margin: auto;
+            margin-top: 80px;
+            
+            .name-email{
+                display: flex;
+                justify-content: space-between;
+                #name{
+                    width: 464px;
+                }
+                #email{
+                    width: 464px;
+                }
+            }
+            #subject{
+                width: 100%;
+                margin-top: 14px;
+                margin-bottom: 14px;
+            }
+            #subject-area{
+                width: 100%;
+                height: 171px;
+            }
+            #submit{
+                border: none;
+                background-color: #3AB6B2;
+                color: white;
+                width: 160px;
+                height: 42px;
+                font-family: 'Raleway', sans-serif;
+                font-size: 13px;
+                font-weight: 700;
+                margin-top: 16px;
+                
+            }
+
+        }
+
+    }
+
