@@ -1,4 +1,4 @@
-@media only screen and (max-width: 768px) {
+
     .contacts{
         padding-top: 45px;
         padding-bottom: 45px;
@@ -16,7 +16,6 @@
                 }
             }
             .contacts-info{
-                background-color: royalblue;
                 margin-top: 42px;
                 width: 100%;
                 // transform: translateX(0px);
@@ -25,12 +24,10 @@
 
                 .info-box{
                     width: 90%;
-                    background-color: orange;
                     transform: translateX(7px);
                     margin-bottom: 35px;
 
                     &:nth-of-type(3), &:nth-of-type(2){
-                        background-color: yellow;
                         transform: translateX(8px);
                         img{
                             // transform: translateX(7px);
@@ -72,4 +69,4 @@
             }
     
         }
-    }
+    

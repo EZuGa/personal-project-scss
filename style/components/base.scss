@@ -11,6 +11,10 @@ body {
     -moz-osx-font-smoothing: grayscale;
     -webkit-font-smoothing: antialiased;
 }
+html,
+body {
+  width: 100%;
+}
 .whole-icon{
     padding-top: 9px;
     text-align: center;

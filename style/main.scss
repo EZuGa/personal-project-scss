@@ -1,28 +1,19 @@
-@import 'components/header/desktop.scss';
-@import 'components/header/tablet.scss';
-@import 'components/header/mobile.scss';
-@import 'components/welcome/desktop.scss';
-@import 'components/welcome/tablet.scss';
-@import 'components/welcome/mobile.scss';
+@import 'components/media-queries.scss';
+@import 'components/palette.scss';
 @import 'components/base.scss';
 @import 'components/reset.scss';
-@import 'components/about/desktop-x-large.scss';
-@import 'components/about/desktop.scss';
-@import 'components/about/tablet.scss';
-@import 'components/about/mobile.scss';
-@import 'components/services/desktop.scss';
-@import 'components/services/tablet.scss';
-@import 'components/services/mobile.scss';
-@import 'components/portfolio/desktop.scss';
-@import 'components/portfolio/desktop-x-large.scss';
-@import 'components/portfolio/desktop-large.scss';
-@import 'components/portfolio/tablet.scss';
-@import 'components/portfolio/mobile.scss';
-@import 'components/contact/desktop-x-large.scss';
-@import 'components/contact/tablet.scss';
-@import 'components/contact/mobile.scss';
-@import 'components/footer/desktop-x-large.scss';
-@import 'components/footer/tablet.scss';
-@import 'components/footer/mobile.scss';
+
+
+
+
+@import 'components/header/index.scss';
+@import 'components/welcome/index.scss';
+@import 'components/about/index.scss';
+@import 'components/contact/index.scss';
+@import 'components/portfolio/index.scss';
+@import 'components/services/index.scss';
+@import 'components/footer/index.scss'
+
+
 
 

@@ -1,31 +1,25 @@
-@media only screen and (max-width: 1024px) {
-    .welcome{
-        width: 100%;
-        padding-top: 158px;
-        padding-bottom: 188px;
-        // padding-top: 0px;
-        // transform: translateX(-10px);
-        .welcome-main{
-                transform: translateX(0px);
-                margin: auto;
+.welcome {
+  width: 100%;
+  padding-top: 158px;
+  padding-bottom: 188px;
 
-        h1:first-of-type{
-            font-size: 59px;
-            
-        }
-        h1:nth-of-type(2){
+  .welcome-main {
+    transform: translateX(0px);
+    margin: auto;
 
-        }
-        p{
-            text-align: center;
-            font-size: 19px;
-            margin-top: 2px;
-        }
-        button{
-            margin-top: 39.5px;
-            transform: translateX(-3.5px);
-
-        }
+    h1:first-of-type {
+      font-size: 59px;
     }
+    h1:nth-of-type(2) {
     }
+    p {
+      text-align: center;
+      font-size: 19px;
+      margin-top: 2px;
+    }
+    button {
+      margin-top: 39.5px;
+      transform: translateX(-3.5px);
+    }
+  }
 }

@@ -1,66 +1,48 @@
-@media only screen and (max-width: 1024px) {
-    .contacts{
-        padding-top: 78px;
-        padding-bottom: 82px;
-            .contacts-header{
-                h2{
-                    font-size: 29px;
-                }
-                .whole-icon{
-                    .joxi{
-                    }
-                }
-            }
-            .contacts-info{
+.contacts {
+  padding-top: 78px;
+  padding-bottom: 82px;
+  .contacts-header {
+    h2 {
+      font-size: 29px;
+    }
+    .whole-icon {
+      .joxi {
+      }
+    }
+  }
+  .contacts-info {
+    margin-top: 56px;
+    max-width: 790px;
+    // transform: translateX(0px);
 
-                margin-top: 56px;
-                max-width: 790px;
-                // transform: translateX(0px);
-
-                .info-box{
-
-
-                    &:nth-of-type(3){
-                        background-color: yellow;
-                        transform: translateX(19px);
-                        img{
-
-                        }
-                    }
-                    img{
-                    }
-                    h3{
-
-
-                    }
-                }
-            }
-            .contacts-form{
-                max-width: 719px;
-                margin-top: 45px;
-                .name-email{
-
-                    #name{
-                        width: 49%;
-                    }
-                    #email{
-                        width: 49.2%;
-                    }
-                }
-                #subject{
-
-                }
-                #subject-area{
-
-                }
-                #submit{
-
-                    
-                }
-    
-            }
-    
+    .info-box {
+      &:nth-of-type(3) {
+        transform: translateX(19px);
+        img {
         }
-
-
+      }
+      img {
+      }
+      h3 {
+      }
+    }
+  }
+  .contacts-form {
+    max-width: 719px;
+    margin-top: 45px;
+    .name-email {
+      #name {
+        width: 49%;
+      }
+      #email {
+        width: 49.2%;
+      }
+    }
+    #subject {
+    }
+    #subject-area {
+    }
+    #submit {
+    }
+  }
 }

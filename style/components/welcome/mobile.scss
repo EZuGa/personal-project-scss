@@ -1,41 +1,36 @@
-@media only screen and (max-width: 768px) {
-    .welcome{
-        width: 100%;
-        padding-top: 48px;
-        padding-bottom: 60px;
-        .welcome-main{
-                transform: translateX(0px);
-                margin: auto;
+.welcome {
+  width: 100%;
+  padding-top: 48px;
+  padding-bottom: 60px;
+  .welcome-main {
+    transform: translateX(0px);
+    margin: auto;
 
-        h1:first-of-type{
-            font-size: 25px;
-            
-        }
-        h1:nth-of-type(2){
-            font-size: 30px;
-        }
-        p{
-            content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum";
-            text-align: center;
-            font-size: 9px;
-            background-color: rosybrown;
-            max-width: 272px;
-            margin: auto;
-            // transform: translateX(-3.5px);
-            margin-top: 0px;
-            letter-spacing: -0.1px;
-            white-space: nowrap; 
-            overflow: hidden;
-            text-overflow: clip; 
-        }
-        button{
-            font-size: 7px;
-            margin-top: 18px;
-            transform: translateX(-3.5px);
-            width: 59px;
-            height: 15px;
-            outline: 2px solid #3AB6B2;
-        }
+    h1:first-of-type {
+      font-size: 25px;
     }
+    h1:nth-of-type(2) {
+      font-size: 30px;
     }
+    p {
+      content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum";
+      text-align: center;
+      font-size: 9px;
+      max-width: 272px;
+      margin: auto;
+      margin-top: 0px;
+      letter-spacing: -0.1px;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: clip;
+    }
+    button {
+      font-size: 7px;
+      margin-top: 18px;
+      transform: translateX(-3.5px);
+      width: 59px;
+      height: 15px;
+      outline: 2px solid #3ab6b2;
+    }
+  }
 }
