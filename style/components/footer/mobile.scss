@@ -1,0 +1,46 @@
+@media only screen and (max-width: 768px) {
+    footer{
+        padding-top: 40px;
+        .footer-main{
+
+        .header-logo {
+            transform: translateX(-1px);
+            .letter-p {
+
+              :nth-child(1) {
+                width: 7.13px;
+              }
+              :nth-child(2) {
+              }
+              :nth-child(3) {
+
+              }
+            }
+            h3 {
+                font-size: 32.49px;
+            }
+          }
+          .footer-buttons{
+            width: 186px;
+            height: 89px;
+            grid-template-columns: repeat(4, 40px);
+            grid-template-rows: repeat(2, 40px);
+            align-content: space-between;
+            margin-top: 42px;
+              div{
+                &:nth-of-type(5) {
+                    grid-column: 2;
+                }
+                  
+                  &:hover{
+                  }
+              }
+          }
+          p{
+            margin-top: 40px;
+            transform: translateX(-2.5px);
+
+          }
+        }
+    }
+}
