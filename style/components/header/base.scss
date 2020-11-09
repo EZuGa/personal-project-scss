@@ -44,12 +44,16 @@ header {
       justify-content: space-between;
       display: flex;
       list-style: none;
-      font-family: "Open Sans", sans-serif;
-      color:$white;
       margin-right: 2px;
       width: 737px;
       min-width: 50%;
-      font-size: 14px;
+      
+      a{
+          text-decoration: none;
+          color:$white;
+          font-family: "Open Sans", sans-serif;
+          font-size: 14px;
+      }
     }
     .header-table-nav {
       display: none;

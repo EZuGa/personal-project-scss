@@ -19,7 +19,7 @@
     }
 }
 
-.contacts {
+#contacts {
     padding-top: 90px;
     padding-bottom: 122px;
     .contacts-header {
@@ -90,6 +90,7 @@
       #subject-area {
         width: 100%;
         height: 171px;
+        resize: none;
       }
     }
   }
