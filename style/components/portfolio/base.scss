@@ -1,3 +1,11 @@
+$bayern: (1:'../images/portfolio/neuer.jpg',
+          2:'../images/portfolio/coman.jpg',
+          3:'../images/portfolio/lewandowski.jpg',
+          4:'../images/portfolio/alaba.jpg',
+          5:'../images/portfolio/hans.jpg',
+          6:'../images/portfolio/gnabry.jpg',
+          7:'../images/portfolio/muller.jpg',
+          );
 #portfolio {
     padding-top: 108px;
     .portfolio-header {
@@ -16,12 +24,24 @@
       grid-template-columns: repeat(5, 1fr);
       grid-template-rows: repeat(2, 1fr);
       grid-gap: 7px;
-      .portfolio-box {
-        &:nth-of-type(1),
-        &:nth-of-type(3),
-        &:nth-of-type(5) {
-          grid-column: span 2;
+
+
+      @each $index,$player in $bayern {
+        .portfolio-box:nth-of-type(#{$index}){
+          background-image: url($player);
+          background-position: center;
+          background-size: cover;
+          background-repeat: no-repeat;
+
+          @if $index==1 or $index==3 or $index==5 {
+            grid-column: span 2;
+          }
+
         }
+      }
+      
+
+      .portfolio-box {
         background-color: #000000;
         position: relative;
         &:hover {
@@ -46,13 +66,13 @@
             width: 46px;
             height: 46px;
             background-color: transparent;
-            border: 2px solid #3ab6b2;
+            border: 2px solid $green;
             border-radius: 50%;
             &:first-of-type {
               transform: translateX(-11px);
             }
             &:hover {
-              background-color: #3ab6b2;
+              background-color: $green;
             }
           }
         }
@@ -68,14 +88,14 @@
             font-size: 16.98px;
             font-weight: 600;
             margin-bottom: 8px;
-            color: white;
+            color: $white;
           }
           p {
             font-size: 13px;
             font-weight: 600;
             font-style: italic;
             margin-bottom: 17.6px;
-            color: #3ab6b2;
+            color: $green;
           }
         }
       }

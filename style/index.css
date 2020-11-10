@@ -1,3 +1,8 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
 h2 {
   font-family: "Raleway", sans-serif;
   font-size: 31px;
@@ -6,7 +11,7 @@ h2 {
 
 * {
   box-sizing: border-box;
-  font-family: "Raleway", sans-serif;
+  font-family: Raleway, sans-serif;
 }
 
 body {
@@ -42,15 +47,10 @@ body {
   color: white;
   width: 160px;
   height: 42px;
-  font-family: "Raleway", sans-serif;
+  font-family: Raleway, sans-serif;
   font-size: 13px;
   font-weight: 700;
   margin-top: 16px;
-}
-
-* {
-  margin: 0;
-  padding: 0;
 }
 
 header {
@@ -92,7 +92,7 @@ header .header-main .header-logo .letter-p :nth-child(3) {
 header .header-main .header-logo h3 {
   font-size: 36px;
   font-weight: 300;
-  font-family: "Raleway", sans-serif;
+  font-family: Raleway, sans-serif;
   color: white;
 }
 header .header-main .header-nav {
@@ -107,7 +107,7 @@ header .header-main .header-nav {
 header .header-main .header-nav a {
   text-decoration: none;
   color: white;
-  font-family: "Open Sans", sans-serif;
+  font-family: Open Sans, sans-serif;
   font-size: 14px;
 }
 header .header-main .header-table-nav {
@@ -141,7 +141,7 @@ header .header-main .header-table-nav {
     margin-bottom: 3px;
   }
 }
-@media only screen and (max-width:768px) and (max-width: 768px) {
+@media only screen and (max-width:768px) {
   header {
     padding-top: 10px;
     padding-left: 20px;
@@ -181,6 +181,10 @@ header .header-main .header-table-nav {
   }
 }
 .welcome {
+  background-image: url(../images/welcome/allianz.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
   background-color: #292929;
   padding-top: 242px;
   padding-bottom: 260px;
@@ -193,13 +197,13 @@ header .header-main .header-table-nav {
   transform: translateX(12px);
 }
 .welcome .welcome-main h1:first-of-type {
-  font-family: "Raleway", sans-serif;
+  font-family: Raleway, sans-serif;
   font-weight: 200;
   font-size: 62px;
   line-height: 1;
 }
 .welcome .welcome-main h1:nth-of-type(2) {
-  font-family: "Montserrat", sans-serif;
+  font-family: Montserrat, sans-serif;
   font-weight: 700;
   font-size: 71px;
   letter-spacing: -1px;
@@ -207,7 +211,7 @@ header .header-main .header-table-nav {
 .welcome .welcome-main p {
   text-align: start;
   font-size: 20px;
-  font-family: "Raleway", sans-serif;
+  font-family: Raleway, sans-serif;
   letter-spacing: -0.2px;
   margin-top: 5px;
 }
@@ -223,50 +227,6 @@ header .header-main .header-table-nav {
   font-weight: 700;
 }
 
-@media only screen and (min-width:1601px) {
-  .welcome {
-    background-color: #292929;
-    padding-top: 242px;
-    padding-bottom: 260px;
-    color: white;
-  }
-  .welcome .welcome-main {
-    max-width: 739px;
-    margin: auto;
-    text-align: center;
-    transform: translateX(12px);
-  }
-  .welcome .welcome-main h1:first-of-type {
-    font-family: "Raleway", sans-serif;
-    font-weight: 200;
-    font-size: 62px;
-    line-height: 1;
-  }
-  .welcome .welcome-main h1:nth-of-type(2) {
-    font-family: "Montserrat", sans-serif;
-    font-weight: 700;
-    font-size: 71px;
-    letter-spacing: -1px;
-  }
-  .welcome .welcome-main p {
-    text-align: start;
-    font-size: 20px;
-    font-family: "Raleway", sans-serif;
-    letter-spacing: -0.2px;
-    margin-top: 5px;
-  }
-  .welcome .welcome-main button {
-    width: 138px;
-    height: 38px;
-    background-color: #3AB6B2;
-    border: 1px solid white;
-    outline: 3px solid #3AB6B2;
-    margin-top: 43px;
-    color: white;
-    font-size: 13px;
-    font-weight: 700;
-  }
-}
 @media only screen and (max-width:1024px) {
   .welcome {
     width: 100%;
@@ -369,10 +329,16 @@ header .header-main .header-table-nav {
   margin-left: 3px;
   margin-top: 5px;
   display: flex;
-  align-items: center;
+  align-items: flex-start;
+  position: relative;
+  flex-shrink: 0;
 }
-#about .about-main .image-mac img {
-  width: 100%;
+#about .about-main .image-mac iframe {
+  position: absolute;
+  width: 470px;
+  top: 20px;
+  left: 20px;
+  height: 265px;
 }
 #about .about-main .about-content {
   width: 576px;
@@ -384,12 +350,11 @@ header .header-main .header-table-nav {
   margin-top: 23px;
   line-height: 1.95;
   font-size: 14px;
-  font-family: "Open Sans", sans-serif;
+  font-family: Open Sans, sans-serif;
 }
 #about .about-main .about-content .content-wrap {
   display: flex;
   justify-content: space-between;
-  flex-wrap: wrap;
 }
 #about .about-main .about-content .content-wrap:first-of-type {
   margin-top: 47px;
@@ -424,7 +389,7 @@ header .header-main .header-table-nav {
 }
 #about .about-main .about-content .content-wrap .content-box div p {
   font-size: 13px;
-  font-family: "Open Sans", sans-serif;
+  font-family: Open Sans, sans-serif;
   line-height: 1.65;
 }
 #about .small-about {
@@ -441,6 +406,11 @@ header .header-main .header-table-nav {
   }
   #about .about-main {
     background-color: #000000;
+    background-image: url(../images/about/bayern.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-clip: border-box;
     margin-top: 57px;
     height: 420px;
     width: 93.5%;
@@ -476,7 +446,7 @@ header .header-main .header-table-nav {
   }
   #about .small-about p {
     line-height: 1.8;
-    font-family: "Open Sans", sans-serif;
+    font-family: Open Sans, sans-serif;
     font-size: 13px;
     color: #525252;
   }
@@ -561,14 +531,14 @@ header .header-main .header-table-nav {
   color: #7C7C7C;
   padding-left: 10px;
   font-size: 14px;
-  font-family: "Raleway", sans-serif;
+  font-family: Raleway, sans-serif;
 }
 .contacts-form textarea {
   border: 1px solid #D4D4D4;
   padding-left: 10px;
   padding-top: 16px;
   font-size: 14px;
-  font-family: "Raleway", sans-serif;
+  font-family: Raleway, sans-serif;
 }
 
 #contacts {
@@ -739,12 +709,54 @@ header .header-main .header-table-nav {
   grid-template-rows: repeat(2, 1fr);
   grid-gap: 7px;
 }
+#portfolio .porfolio-main .portfolio-box:nth-of-type(1) {
+  background-image: url("../images/portfolio/neuer.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  grid-column: span 2;
+}
+#portfolio .porfolio-main .portfolio-box:nth-of-type(2) {
+  background-image: url("../images/portfolio/coman.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+#portfolio .porfolio-main .portfolio-box:nth-of-type(3) {
+  background-image: url("../images/portfolio/lewandowski.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  grid-column: span 2;
+}
+#portfolio .porfolio-main .portfolio-box:nth-of-type(4) {
+  background-image: url("../images/portfolio/alaba.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+#portfolio .porfolio-main .portfolio-box:nth-of-type(5) {
+  background-image: url("../images/portfolio/hans.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  grid-column: span 2;
+}
+#portfolio .porfolio-main .portfolio-box:nth-of-type(6) {
+  background-image: url("../images/portfolio/gnabry.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+#portfolio .porfolio-main .portfolio-box:nth-of-type(7) {
+  background-image: url("../images/portfolio/muller.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
 #portfolio .porfolio-main .portfolio-box {
   background-color: #000000;
   position: relative;
-}
-#portfolio .porfolio-main .portfolio-box:nth-of-type(1), #portfolio .porfolio-main .portfolio-box:nth-of-type(3), #portfolio .porfolio-main .portfolio-box:nth-of-type(5) {
-  grid-column: span 2;
 }
 #portfolio .porfolio-main .portfolio-box:hover {
   background-color: #292929;
@@ -768,14 +780,14 @@ header .header-main .header-table-nav {
   width: 46px;
   height: 46px;
   background-color: transparent;
-  border: 2px solid #3ab6b2;
+  border: 2px solid #3AB6B2;
   border-radius: 50%;
 }
 #portfolio .porfolio-main .portfolio-box .box-upper .wre:first-of-type {
   transform: translateX(-11px);
 }
 #portfolio .porfolio-main .portfolio-box .box-upper .wre:hover {
-  background-color: #3ab6b2;
+  background-color: #3AB6B2;
 }
 #portfolio .porfolio-main .portfolio-box .box-lower {
   background-color: #000000;
@@ -797,7 +809,7 @@ header .header-main .header-table-nav {
   font-weight: 600;
   font-style: italic;
   margin-bottom: 17.6px;
-  color: #3ab6b2;
+  color: #3AB6B2;
 }
 
 @media only screen and (max-width:1024px) {
@@ -931,79 +943,12 @@ header .header-main .header-table-nav {
 }
 #services .services-main .services-box p {
   font-size: 14px;
-  font-family: "Open Sans", sans-serif;
+  font-family: Open Sans, sans-serif;
   line-height: 1.6;
   letter-spacing: 0.25px;
   margin-top: 14px;
 }
 
-@media only screen and (max-width:1200px) {
-  .services {
-    background-color: #000000;
-    color: white;
-    padding-top: 140px;
-    padding-bottom: 150px;
-  }
-  .services .services-header h2 {
-    text-align: center;
-  }
-  .services .services-header .whole-icon {
-    padding-top: 3px;
-  }
-  .services .services-header .whole-icon .joxi {
-    margin-top: 2px;
-  }
-  .services .services-main {
-    display: flex;
-    justify-content: space-between;
-    max-width: 1175px;
-    margin: auto;
-    margin-top: 135px;
-  }
-  .services .services-main .services-box {
-    width: 295px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-  }
-  .services .services-main .services-box .hexa-green {
-    display: none;
-    width: 141px;
-  }
-  .services .services-main .services-box .hexa-white {
-    width: 138px;
-  }
-  .services .services-main .services-box:hover .hexa-white {
-    display: none;
-  }
-  .services .services-main .services-box:hover .hexa-green {
-    display: block;
-  }
-  .services .services-main .services-box .hexa {
-    position: relative;
-    width: fit-content;
-  }
-  .services .services-main .services-box .hexa .shida {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -63%);
-  }
-  .services .services-main .services-box h3 {
-    font-size: 20px;
-    color: #3AB6B2;
-    margin-top: 30px;
-    letter-spacing: 0.3px;
-  }
-  .services .services-main .services-box p {
-    font-size: 14px;
-    font-family: "Open Sans", sans-serif;
-    line-height: 1.6;
-    letter-spacing: 0.25px;
-    margin-top: 14px;
-  }
-}
 @media only screen and (max-width:1024px) {
   #services {
     padding-top: 72px;
@@ -1109,7 +1054,7 @@ footer .footer-main .header-logo .letter-p :nth-child(3) {
 footer .footer-main .header-logo h3 {
   font-size: 36px;
   font-weight: 300;
-  font-family: "Raleway", sans-serif;
+  font-family: Raleway, sans-serif;
   color: white;
 }
 footer .footer-main .footer-buttons {
@@ -1138,81 +1083,12 @@ footer .footer-main p {
   letter-spacing: 0.2px;
 }
 
-@media only screen and (min-width:1601px) {
-  footer {
-    background-color: #111111;
-    padding-top: 47px;
-    padding-bottom: 60px;
-  }
-  footer .footer-main {
-    max-width: 1180px;
-    margin: auto;
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-  }
-  footer .footer-main .header-logo {
-    transform: translateX(1px);
-    display: flex;
-    align-items: flex-end;
-    height: 48px;
-  }
-  footer .footer-main .header-logo .letter-p {
-    position: relative;
-    height: 95%;
-    width: 24px;
-  }
-  footer .footer-main .header-logo .letter-p :nth-child(1) {
-    position: absolute;
-    top: 5px;
-    width: 7.71px;
-  }
-  footer .footer-main .header-logo .letter-p :nth-child(2) {
-    position: absolute;
-  }
-  footer .footer-main .header-logo .letter-p :nth-child(3) {
-    position: absolute;
-    top: 15px;
-    left: 10px;
-  }
-  footer .footer-main .header-logo h3 {
-    font-size: 36px;
-    font-weight: 300;
-    font-family: "Raleway", sans-serif;
-    color: white;
-  }
-  footer .footer-main .footer-buttons {
-    display: grid;
-    grid-template-columns: repeat(6, 40px);
-    justify-content: space-between;
-    width: 283px;
-    margin-top: 45px;
-  }
-  footer .footer-main .footer-buttons div {
-    width: 40px;
-    height: 40px;
-    border-radius: 3px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: #252525;
-  }
-  footer .footer-main .footer-buttons div:hover {
-    background-color: #46629E;
-  }
-  footer .footer-main p {
-    margin-top: 48px;
-    font-size: 11px;
-    color: white;
-    letter-spacing: 0.2px;
-  }
-}
 @media only screen and (max-width:1024px) {
   footer .footer-main .footer-buttons {
     transform: translateX(-2.5px);
   }
 }
-@media only screen and (max-width:768px) and (max-width: 768px) {
+@media only screen and (max-width:768px) {
   footer {
     padding-top: 40px;
   }

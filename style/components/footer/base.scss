@@ -34,8 +34,8 @@ footer{
         h3 {
           font-size: 36px;
           font-weight: 300;
-          font-family: "Raleway", sans-serif;
-          color: white;
+          font-family: #{$rel};;
+          color: $white;
         }
       }
 
@@ -61,7 +61,7 @@ footer{
       p{
           margin-top: 48px;
           font-size: 11px;
-          color: white;
+          color: $white;
           letter-spacing: 0.2px;
       }
     }

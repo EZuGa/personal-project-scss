@@ -40,10 +40,18 @@
             margin-left: 3px;
             margin-top: 5px;
             display: flex;
-            align-items: center;
+            align-items: flex-start;
+            position: relative;
+            flex-shrink: 0;
+            iframe{
+                position: absolute;
+                width: 470px;
+                top: 20px;
+                left: 20px;
+                height: 265px;
+            }
 
             img{
-                width: 100%;
             }
         }
         .about-content{
@@ -55,7 +63,7 @@
                 margin-top: 23px;
                 line-height: 1.95;
                 font-size: 14px;
-                font-family: 'Open Sans', sans-serif;
+                font-family: #{$sans};
             }
             .content-wrap{
                 &:first-of-type{
@@ -66,7 +74,7 @@
                 }
                 display: flex;
                 justify-content: space-between;
-                flex-wrap: wrap;
+                // flex-wrap: wrap;
                 .content-box{
                     
                     display: flex;
@@ -94,7 +102,7 @@
                     }
                     p{
                         font-size: 13px ;
-                        font-family: 'Open Sans', sans-serif;
+                        font-family: #{$sans};
                         line-height: 1.65;
                     
                 }

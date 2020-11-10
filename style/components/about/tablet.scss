@@ -14,6 +14,11 @@
         
         .about-main{
             background-color: #000000;
+            background-image: url(../images/about/bayern.jpg);
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+            background-clip: border-box;
             margin-top: 57px;
             height: 420px;
             width: 93.5%;
@@ -49,7 +54,7 @@
             }
             p{
                 line-height: 1.8;
-                font-family: 'Open Sans', sans-serif;
+                font-family: #{$sans};
                 font-size: 13px;
                 color: #525252;
             }

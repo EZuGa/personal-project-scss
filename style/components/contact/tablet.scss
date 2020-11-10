@@ -13,7 +13,6 @@
   .contacts-info {
     margin-top: 56px;
     max-width: 790px;
-    // transform: translateX(0px);
 
     .info-box {
       &:nth-of-type(3) {
@@ -37,12 +36,6 @@
       #email {
         width: 49.2%;
       }
-    }
-    #subject {
-    }
-    #subject-area {
-    }
-    #submit {
     }
   }
 }
