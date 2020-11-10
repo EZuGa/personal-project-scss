@@ -80,6 +80,23 @@ body {
     transform: scale(1, 1) translateY(0);
   }
 }
+@keyframes scane-bounce {
+  0% {
+    transform: scale(1, 1) translateY(0);
+  }
+  30% {
+    transform: scale(1.2, 1.2) translateY(-30px) rotate(60deg);
+  }
+  50% {
+    transform: scale(1.1, 1.1) translateY(0);
+  }
+  64% {
+    transform: scale(1, 1) translateY(5px);
+  }
+  100% {
+    transform: scale(1, 1) translateY(0);
+  }
+}
 @keyframes water {
   0%, 100% {
     clip-path: polygon(0 39%, 14% 42%, 26% 49%, 37% 57%, 54% 60%, 71% 59%, 86% 53%, 100% 48%, 100% 100%, 0 100%);
@@ -108,7 +125,6 @@ header .header-main .header-logo {
   height: 48px;
   animation-duration: 2s;
   transform-origin: bottom;
-  animation-iteration-count: 1;
 }
 header .header-main .header-logo:hover {
   animation-name: bounce-7;
@@ -150,6 +166,12 @@ header .header-main .header-nav a {
   color: white;
   font-family: Open Sans, sans-serif;
   font-size: 14px;
+}
+header .header-main .header-nav a:hover {
+  background: linear-gradient(90deg, #833ab4 0%, #fd1d1d 36%, #fd5e2f 65%, #fcb045 100%);
+  font-weight: 900;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 header .header-main .header-table-nav {
   display: none;
@@ -311,7 +333,7 @@ header .header-main .header-table-nav {
     transform: translateX(0px);
     margin: auto;
   }
-  .welcome .welcome-main h1:first-of-type {
+  .welcome .welcome-main > h1:first-of-type {
     font-size: 59px;
   }
   .welcome .welcome-main p {
@@ -451,6 +473,11 @@ header .header-main .header-table-nav {
   display: flex;
   justify-content: center;
   align-items: center;
+  animation-duration: 2s;
+  transform-origin: center;
+}
+#about .about-main .about-content .content-wrap .content-box .wre:hover {
+  animation-name: scane-bounce;
 }
 #about .about-main .about-content .content-wrap .content-box div {
   width: 66%;
@@ -1140,7 +1167,7 @@ footer .footer-main .footer-buttons {
   width: 283px;
   margin-top: 45px;
 }
-footer .footer-main .footer-buttons div {
+footer .footer-main .footer-buttons .outer {
   width: 40px;
   height: 40px;
   border-radius: 3px;
@@ -1148,10 +1175,20 @@ footer .footer-main .footer-buttons div {
   justify-content: center;
   align-items: center;
   background-color: #252525;
-  transition: background 0.5s ease-in-out;
+  transition: background 1s ease-in-out;
 }
-footer .footer-main .footer-buttons div:hover {
+footer .footer-main .footer-buttons .outer:hover {
   background-color: #46629E;
+}
+footer .footer-main .footer-buttons .outer:hover .back-partial {
+  width: 70%;
+  height: 70%;
+  clip-path: polygon(50% 0%, 100% 38%, 82% 100%, 18% 100%, 0% 38%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #46629E;
+  border-radius: 20%;
 }
 footer .footer-main p {
   margin-top: 48px;

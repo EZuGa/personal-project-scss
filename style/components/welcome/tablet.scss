@@ -9,7 +9,7 @@
     transform: translateX(0px);
     margin: auto;
 
-    h1:first-of-type {
+    &>h1:first-of-type {
       font-size: 59px;
     }
     p {

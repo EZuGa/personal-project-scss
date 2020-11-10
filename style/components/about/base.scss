@@ -90,6 +90,11 @@
                         display: flex;
                         justify-content: center;
                         align-items: center;
+                        animation-duration: 2s;
+                        transform-origin: center;
+                        &:hover{
+                            animation-name: scane-bounce;
+                        }
                     }
                     div{
                         width: 66%;
