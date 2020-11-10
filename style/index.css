@@ -19,6 +19,10 @@ body {
   -webkit-font-smoothing: antialiased;
 }
 
+p::selection {
+  background-color: #198870;
+}
+
 html,
 body {
   width: 100%;
@@ -41,7 +45,7 @@ body {
   margin: 0px 4px;
 }
 
-#submit {
+.submit {
   border: none;
   background-color: #3AB6B2;
   color: white;
@@ -53,6 +57,37 @@ body {
   margin-top: 16px;
 }
 
+@keyframes bounce-7 {
+  0% {
+    transform: scale(1, 1) translateY(0);
+  }
+  10% {
+    transform: scale(1.1, 0.9) translateY(0);
+  }
+  30% {
+    transform: scale(0.9, 1.1) translateY(-30px);
+  }
+  50% {
+    transform: scale(1.05, 0.95) translateY(0);
+  }
+  57% {
+    transform: scale(1, 1) translateY(-7px);
+  }
+  64% {
+    transform: scale(1, 1) translateY(0);
+  }
+  100% {
+    transform: scale(1, 1) translateY(0);
+  }
+}
+@keyframes water {
+  0%, 100% {
+    clip-path: polygon(0 39%, 14% 42%, 26% 49%, 37% 57%, 54% 60%, 71% 59%, 86% 53%, 100% 48%, 100% 100%, 0 100%);
+  }
+  50% {
+    clip-path: polygon(0 47%, 14% 51%, 26% 57%, 40% 54%, 55% 51%, 67% 46%, 83% 39%, 100% 34%, 100% 100%, 0 100%);
+  }
+}
 header {
   background-color: #000000;
   padding-top: 26px;
@@ -71,6 +106,12 @@ header .header-main .header-logo {
   display: flex;
   align-items: flex-end;
   height: 48px;
+  animation-duration: 2s;
+  transform-origin: bottom;
+  animation-iteration-count: 1;
+}
+header .header-main .header-logo:hover {
+  animation-name: bounce-7;
 }
 header .header-main .header-logo .letter-p {
   position: relative;
@@ -141,7 +182,7 @@ header .header-main .header-table-nav {
     margin-bottom: 3px;
   }
 }
-@media only screen and (max-width:768px) {
+@media only screen and (max-width:767px) {
   header {
     padding-top: 10px;
     padding-left: 20px;
@@ -181,6 +222,7 @@ header .header-main .header-table-nav {
   }
 }
 .welcome {
+  position: relative;
   background-image: url(../images/welcome/allianz.jpg);
   background-position: center;
   background-size: cover;
@@ -190,23 +232,52 @@ header .header-main .header-table-nav {
   padding-bottom: 260px;
   color: white;
 }
+.welcome .left {
+  position: absolute;
+  top: 40%;
+  left: 40px;
+}
+.welcome .right {
+  position: absolute;
+  top: 40%;
+  right: 40px;
+}
 .welcome .welcome-main {
   max-width: 739px;
   margin: auto;
   text-align: center;
   transform: translateX(12px);
 }
-.welcome .welcome-main h1:first-of-type {
+.welcome .welcome-main > h1:first-of-type {
   font-family: Raleway, sans-serif;
   font-weight: 200;
   font-size: 62px;
   line-height: 1;
 }
-.welcome .welcome-main h1:nth-of-type(2) {
+.welcome .welcome-main .wave {
+  position: relative;
+  height: fit-content;
+  width: fit-content;
+  margin: auto;
+}
+.welcome .welcome-main .wave h1 {
   font-family: Montserrat, sans-serif;
   font-weight: 700;
   font-size: 71px;
   letter-spacing: -1px;
+}
+.welcome .welcome-main .wave:hover :last-child {
+  animation: water 4s ease-in-out infinite;
+  color: #03a9f4;
+  transition: opacity 2s ease-in-out;
+  opacity: 1;
+}
+.welcome .welcome-main .wave :first-child {
+  position: absolute;
+  right: 0px;
+}
+.welcome .welcome-main .wave :last-child {
+  opacity: 0;
 }
 .welcome .welcome-main p {
   text-align: start;
@@ -233,6 +304,9 @@ header .header-main .header-table-nav {
     padding-top: 158px;
     padding-bottom: 188px;
   }
+  .welcome .left, .welcome .right {
+    display: none;
+  }
   .welcome .welcome-main {
     transform: translateX(0px);
     margin: auto;
@@ -250,7 +324,7 @@ header .header-main .header-table-nav {
     transform: translateX(-3.5px);
   }
 }
-@media only screen and (max-width:768px) {
+@media only screen and (max-width:767px) {
   .welcome {
     width: 100%;
     padding-top: 48px;
@@ -263,7 +337,7 @@ header .header-main .header-table-nav {
   .welcome .welcome-main h1:first-of-type {
     font-size: 25px;
   }
-  .welcome .welcome-main h1:nth-of-type(2) {
+  .welcome .welcome-main .wave h1 {
     font-size: 30px;
   }
   .welcome .welcome-main p {
@@ -464,15 +538,16 @@ header .header-main .header-table-nav {
   #about .small-about .check-text p {
     width: 530px;
   }
-  #about .small-about #submit {
+  #about .small-about .submit {
     margin-top: 21px;
     width: 139px;
     font-size: 13px;
   }
 }
-@media only screen and (max-width:768px) {
+@media only screen and (max-width:767px) {
   #about {
     padding-top: 35px;
+    padding-bottom: 43px;
   }
   #about .about-header h2 {
     font-size: 27px;
@@ -516,7 +591,7 @@ header .header-main .header-table-nav {
   #about .small-about .check-text p {
     width: 99.5%;
   }
-  #about .small-about #submit {
+  #about .small-about .submit {
     margin-top: 24px;
     width: 139px;
     font-size: 13px;
@@ -558,7 +633,7 @@ header .header-main .header-table-nav {
   display: flex;
   align-items: flex-end;
   justify-content: space-between;
-  transform: translateX(-8px);
+  transform: translateX(-7px);
 }
 #contacts .contacts-info .info-box {
   text-align: center;
@@ -620,10 +695,10 @@ header .header-main .header-table-nav {
   }
   #contacts .contacts-info {
     margin-top: 56px;
-    max-width: 790px;
+    max-width: 780px;
   }
-  #contacts .contacts-info .info-box:nth-of-type(3) {
-    transform: translateX(19px);
+  #contacts .contacts-info .info-box {
+    width: 200px;
   }
   #contacts .contacts-form {
     max-width: 719px;
@@ -636,7 +711,7 @@ header .header-main .header-table-nav {
     width: 49.2%;
   }
 }
-@media only screen and (max-width:768px) {
+@media only screen and (max-width:767px) {
   #contacts {
     padding-top: 45px;
     padding-bottom: 45px;
@@ -685,7 +760,7 @@ header .header-main .header-table-nav {
   #contacts .contacts-form #subject-area {
     height: 141px;
   }
-  #contacts .contacts-form #submit {
+  #contacts .contacts-form .submit {
     margin-top: 13px;
   }
 }
@@ -761,17 +836,16 @@ header .header-main .header-table-nav {
 #portfolio .porfolio-main .portfolio-box:hover {
   background-color: #292929;
 }
-#portfolio .porfolio-main .portfolio-box:hover .box-lower {
-  display: block;
-}
-#portfolio .porfolio-main .portfolio-box:hover .box-upper {
-  display: flex;
+#portfolio .porfolio-main .portfolio-box:hover .box-lower, #portfolio .porfolio-main .portfolio-box:hover .box-upper {
+  opacity: 1;
 }
 #portfolio .porfolio-main .portfolio-box .box-upper {
   margin-top: 160px;
-  display: none;
+  display: flex;
+  opacity: 0;
   justify-content: center;
   margin-right: 4px;
+  transition: opacity 1.5s;
 }
 #portfolio .porfolio-main .portfolio-box .box-upper .wre {
   display: flex;
@@ -788,15 +862,17 @@ header .header-main .header-table-nav {
 }
 #portfolio .porfolio-main .portfolio-box .box-upper .wre:hover {
   background-color: #3AB6B2;
+  transition: background 0.2s ease-in-out;
 }
 #portfolio .porfolio-main .portfolio-box .box-lower {
   background-color: #000000;
   position: absolute;
-  display: none;
+  opacity: 0;
   bottom: 0;
   width: 100%;
   text-align: center;
   padding-top: 15px;
+  transition: opacity 1s;
 }
 #portfolio .porfolio-main .portfolio-box .box-lower h5 {
   font-size: 16.98px;
@@ -854,7 +930,7 @@ header .header-main .header-table-nav {
     margin-bottom: 12px;
   }
 }
-@media only screen and (max-width:768px) {
+@media only screen and (max-width:767px) {
   #portfolio {
     padding-top: 37px;
   }
@@ -975,7 +1051,7 @@ header .header-main .header-table-nav {
     margin-bottom: 0px;
   }
 }
-@media only screen and (max-width:768px) {
+@media only screen and (max-width:767px) {
   #services {
     padding-top: 38px;
     padding-bottom: 40px;
@@ -1072,6 +1148,7 @@ footer .footer-main .footer-buttons div {
   justify-content: center;
   align-items: center;
   background-color: #252525;
+  transition: background 0.5s ease-in-out;
 }
 footer .footer-main .footer-buttons div:hover {
   background-color: #46629E;
@@ -1088,7 +1165,7 @@ footer .footer-main p {
     transform: translateX(-2.5px);
   }
 }
-@media only screen and (max-width:768px) {
+@media only screen and (max-width:767px) {
   footer {
     padding-top: 40px;
   }

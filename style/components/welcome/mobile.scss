@@ -9,9 +9,12 @@
     h1:first-of-type {
       font-size: 25px;
     }
-    h1:nth-of-type(2) {
-      font-size: 30px;
+    .wave{
+      h1 {
+        font-size: 30px;
+      }
     }
+    
     p {
       content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum";
       text-align: center;

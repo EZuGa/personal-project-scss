@@ -11,6 +11,9 @@ body {
     -moz-osx-font-smoothing: grayscale;
     -webkit-font-smoothing: antialiased;
 }
+p::selection{
+    background-color: rgb(25, 136, 112);
+}
 html,
 body {
   width: 100%;
@@ -32,7 +35,7 @@ body {
         margin: 0px 4px;   
     }
 }
-#submit{
+.submit{
     border: none;
     background-color: $green;
     color: $white;
@@ -43,3 +46,11 @@ body {
     font-weight: 700;
     margin-top: 16px;
 }
+$bayern: (1:'../images/portfolio/neuer.jpg',
+          2:'../images/portfolio/coman.jpg',
+          3:'../images/portfolio/lewandowski.jpg',
+          4:'../images/portfolio/alaba.jpg',
+          5:'../images/portfolio/hans.jpg',
+          6:'../images/portfolio/gnabry.jpg',
+          7:'../images/portfolio/muller.jpg',
+          );

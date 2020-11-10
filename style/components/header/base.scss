@@ -15,7 +15,14 @@ header {
       display: flex;
       align-items: flex-end;
       height: 48px;
+      animation-duration: 2s;
+      transform-origin: bottom;
+      animation-iteration-count: 1;
+      &:hover{
+        animation-name: bounce-7;
+      }
       .letter-p {
+        
         position: relative;
         height: 95%;
         width: 27px;
@@ -63,4 +70,5 @@ header {
     }
   }
 }
+
 

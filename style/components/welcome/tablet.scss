@@ -2,15 +2,15 @@
   width: 100%;
   padding-top: 158px;
   padding-bottom: 188px;
-
+  .left, .right{
+    display: none;
+}
   .welcome-main {
     transform: translateX(0px);
     margin: auto;
 
     h1:first-of-type {
       font-size: 59px;
-    }
-    h1:nth-of-type(2) {
     }
     p {
       text-align: center;

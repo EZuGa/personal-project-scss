@@ -1,11 +1,3 @@
-$bayern: (1:'../images/portfolio/neuer.jpg',
-          2:'../images/portfolio/coman.jpg',
-          3:'../images/portfolio/lewandowski.jpg',
-          4:'../images/portfolio/alaba.jpg',
-          5:'../images/portfolio/hans.jpg',
-          6:'../images/portfolio/gnabry.jpg',
-          7:'../images/portfolio/muller.jpg',
-          );
 #portfolio {
     padding-top: 108px;
     .portfolio-header {
@@ -46,19 +38,19 @@ $bayern: (1:'../images/portfolio/neuer.jpg',
         position: relative;
         &:hover {
           background-color: #292929;
-          .box-lower {
-            display: block;
+          .box-lower,.box-upper {
+            opacity: 1;
           }
-          .box-upper {
-            display: flex;
-          }
+
         }
   
         .box-upper {
           margin-top: 160px;
-          display: none;
+          display: flex;
+          opacity: 0;
           justify-content: center;
           margin-right: 4px;
+          transition: opacity 1.5s;
           .wre {
             display: flex;
             justify-content: center;
@@ -73,17 +65,19 @@ $bayern: (1:'../images/portfolio/neuer.jpg',
             }
             &:hover {
               background-color: $green;
+              @include anim-background(0.2s);
             }
           }
         }
         .box-lower {
           background-color: #000000;
           position: absolute;
-          display: none;
+          opacity: 0;
           bottom: 0;
           width: 100%;
           text-align: center;
           padding-top: 15px;
+          transition: opacity 1s;
           h5 {
             font-size: 16.98px;
             font-weight: 600;

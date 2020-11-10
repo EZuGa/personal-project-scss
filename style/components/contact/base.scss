@@ -23,6 +23,7 @@
     padding-top: 90px;
     padding-bottom: 122px;
     .contacts-header {
+      
       h2 {
         text-align: center;
       }
@@ -33,13 +34,14 @@
       }
     }
     .contacts-info {
+
       max-width: 844px;
       margin: auto;
       margin-top: 89px;
       display: flex;
       align-items: flex-end;
       justify-content: space-between;
-      transform: translateX(-8px);
+      transform: translateX(-7px);
       .info-box {
         text-align: center;
         width: 229px;
@@ -60,8 +62,6 @@
           letter-spacing: 0.6px;
           line-height: 1.6;
           transform: translateX(2px);
-          span {
-          }
         }
       }
     }
